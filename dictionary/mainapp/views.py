@@ -11,13 +11,13 @@ def add_word_page(request):
         return render(request, template_name='add_word.html')
     else:
         print(request.POST)
-        with open(r"C:\Users\gurin\PycharmProjects\dictionary\mainapp\dictionary.txt", "a") as file:
+        with open(r"dictionary.txt", "a") as file:
             file.write(f"{request.POST['word1']} - {request.POST['word2']}\n")
         return redirect(index_page)
 
 
 def read_from_file():
-    with open(r"C:\Users\gurin\PycharmProjects\dictionary\mainapp\dictionary.txt", "r", encoding="utf-8") as file:
+    with open(r"dictionary.txt", "r", encoding="utf-8") as file:
         contents = [i.strip() for i in file.readlines()]
         words1 = []
         words2 = []
