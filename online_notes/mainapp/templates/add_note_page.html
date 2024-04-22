@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Add note {% endblock %}
+
+{% block content %}
+
+<h2>Add note</h2>
+<form method="POST" action="">
+    <label for="note-text">Note text</label>
+    <div>
+        <input name="note-text" id="note-text" type="text" required>
+        <p class="my-note"></p>
+    </div>
+    {% csrf_token %}
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock %}

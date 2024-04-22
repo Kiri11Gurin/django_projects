@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} Notes {% endblock %}
+
+{% block content %}
+
+<h2>Notes:</h2>
+
+{% for note in notes %}
+    <hr style="margin-left:0px;width:250px;">
+    <p class="my-note">{{ note.Message }}</p>
+{% endfor %}
+    <hr style="margin:0px;width:250px;">
+
+{% endblock %}

@@ -1,0 +1,11 @@
+body { font-size: 140%; margin-left: 200px; background-color: Honeydew;}  /* изменение всех элементов в документе */
+h1 { color: red; }  /* heading1 */
+h2 { color: blue; }  /* heading2 */
+p { color: rgba(0, 255, 0, 0.9); }
+ol{ color: Black; }  /* ordered list */
+ul{ color: #000000; }  /* unordered list */
+li { color: Olive; }  /* list item */
+label { color: Chocolate; }
+p.my-note { color: LightSeaGreen; }  /* обращение к классу */
+/* для изменения всех элементов класса: .my-note */
+/* #my-note либо p#my-note для обращения к id (если бы было: <p id="my-note">) */
